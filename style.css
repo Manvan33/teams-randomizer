@@ -1,23 +1,26 @@
 * {
 	margin: 0;
-	padding:0;
+	padding: 0;
 }
+
 html {
 	font-family: 'Press Start 2P', cursive;
 	scroll-behavior: smooth;
 }
+
 body {
 	background: url("neon.jpg") top repeat-y;
 	background-size: 100%;
 	text-align: center;
 	color: #fd7d00;
 	font-size: 1.15em;
-	padding:0 0 4em 0;
+	padding: 0 0 4em 0;
 }
+
 h1 {
 	z-index: 200;
 	position: fixed;
-	top:0;
+	top: 0;
 	left: 0;
 	width: 100%;
 	text-align: left;
@@ -29,23 +32,27 @@ h1 {
 	padding-left: 5vw;
 	box-shadow: 0px 2px 5px #fd7d00;
 }
+
 .main {
 	margin: 12em 2em 1em 2em;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
 .main .column {
 	background: black;
 	border-radius: 5px;
-	box-shadow:0px 5px 20px aqua;
+	box-shadow: 0px 5px 20px aqua;
 	min-width: 20em;
 	min-height: 35em;
 }
+
 .main .column>* {
 	width: 100%;
 	color: white;
 }
+
 .main .column>h2 {
 	height: 13%;
 	border-bottom: 2px solid #0FF;
@@ -57,6 +64,7 @@ h1 {
 	text-align: center;
 	font-variant: small-caps;
 }
+
 .main .column ul {
 	overflow: auto;
 	display: flex;
@@ -65,6 +73,7 @@ h1 {
 	max-height: 40em;
 	list-style: none;
 }
+
 .main ul li {
 	cursor: pointer;
 	border-bottom: 2px solid #fd7d00;
@@ -73,22 +82,26 @@ h1 {
 	font-variant: small-caps;
 	padding: 0.2em 1em;
 }
+
 .input {
 	height: 12%;
 	display: flex;
 	margin: 0;
 	width: 100%;
 }
+
 .input input {
 	border-radius: 0 0 0 5px;
 	display: block;
 	width: 80%;
 }
+
 .input button {
 	border-radius: 0 0 5px 0;
 	width: 20%;
 	cursor: pointer;
 }
+
 .input>* {
 	color: white;
 	background: black;
@@ -98,6 +111,7 @@ h1 {
 	text-align: center;
 	font-size: 1em;
 }
+
 #launch {
 	align-self: center;
 	display: inline-block;
@@ -109,12 +123,13 @@ h1 {
 	height: 3.5em;
 	min-width: 20%;
 	background: black;
-	color:white;
+	color: white;
 	font-size: 2em;
 	border: none;
 	border-top: 3px solid aqua;
 	box-shadow: 0px 10px 20px #fd7d00;
 }
+
 #launch:hover {
 	transition: 0.2s;
 	font-size: 2.5em;
@@ -123,10 +138,12 @@ h1 {
 	height: 4em;
 	line-height: 4em;
 }
+
 #second {
 	margin: 5em 2em 10em 2em;
-	padding-top:8em;
+	padding-top: 8em;
 }
+
 #results {
 	width: 80%;
 	min-height: 20em;
@@ -135,15 +152,18 @@ h1 {
 	justify-content: space-around;
 	align-items: center;
 }
+
 #results ul {
 	list-style: none;
 	display: block;
 	height: 100%;
 	flex-grow: 1;
 }
+
 #results ul:not(:last-of-type) {
 	border-right: 2px solid aqua;
 }
+
 #results ul li:first-of-type {
 	box-shadow: 0px 0px 10px aqua;
 	border-bottom: none;
@@ -151,9 +171,11 @@ h1 {
 	padding: 0.5em 0;
 	margin: 0 0 0.5em 0;
 }
+
 footer+div a {
 	display: none;
 }
+
 footer {
 	position: fixed;
 	right: 0;
@@ -165,43 +187,51 @@ footer {
 	background: #000000CC;
 	box-shadow: -2px -2px 8px aqua;
 }
+
 footer a {
 	color: aqua;
 	line-height: 1.1em;
 	text-decoration: none;
 	outline: none;
 }
+
 @media screen and (max-width: 800px) {
 	html {
 		font-size: 0.65em;
 	}
+
 	.main {
 		margin: 4em 0;
 		align-items: center;
 		flex-direction: column;
 	}
-	.main>.column{
+
+	.main>.column {
 		width: 60%;
 		height: 40em;
 		margin-top: 3em;
 		margin-top: 3em;
 	}
+
 	.main #launch {
 		order: 2;
 		width: 80%;
 		margin-top: 3em;
 	}
+
 	h1 {
 		position: absolute;
 		font-size: 2em;
 		padding-left: 0;
 		text-align: center;
 	}
+
 	#second {
-		margin:1em;
+		margin: 1em;
 		padding: 0em;
 		height: 70%;
 	}
+
 	#results {
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -209,13 +239,15 @@ footer a {
 		width: 100%;
 		overflow: none;
 	}
+
 	#results ul {
 		flex-grow: 1;
 		height: auto;
 	}
+
 	footer {
 		position: fixed;
-		right: 0%; 
+		right: 0%;
 		width: 50%;
 	}
 }
