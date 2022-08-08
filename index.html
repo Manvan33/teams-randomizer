@@ -1,51 +1,53 @@
 <html>
 
 <head>
-  <meta lang="fr">
-  <meta charset="utf-8">
-  <meta name="viewport" id="viewport" content="width=device-width,
+    <meta lang="fr">
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width,
           height=device-height,
           initial-scale=1.0,
-          user-scalable=yes" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Teams Randomizer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+          user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Teams Randomizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body onload="init();">
-  <h1>Teams Randomizer</h1>
-  <div class="main">
+<header>
+
+    <h1>Teams Randomizer</h1>
+</header>
+<main class="flex">
     <div class="column" id="players">
-      <h2>Players</h2>
-      <ul id="playersList">
-      </ul>
-      <div class="input">
-        <input type="text" id="playerInput" placeholder="Add Player">
-        <button id="playerAdd">+</button>
-      </div>
+        <h2>Players</h2>
+        <ul id="playersList">
+        </ul>
+        <div class="inputs">
+            <input type="text" id="playerInput" placeholder="Add Player">
+            <button id="playerAdd">+</button>
+        </div>
     </div>
-    <a href="#second" id="launch">RANDOMIZE</a>
     <div class="column" id="teams">
-      <h2>Teams</h2>
-      <ul id="teamsList">
-      </ul>
-      <div class="input">
-        <input type="text" id="teamInput" placeholder="Add Team">
-        <button id="teamAdd">+</button>
-      </div>
+        <h2>Teams</h2>
+        <ul id="teamsList">
+        </ul>
+        <div class="inputs">
+            <input type="text" id="teamInput" placeholder="Add Team">
+            <button id="teamAdd">+</button>
+        </div>
     </div>
-  </div>
-  <div class='main' id="second">
+        <button href="#second" id="launch">Randomize</button>
+
+</main>
+<div class='main' id="second">
     <div id="results">
-      Press 'Randomize' to see the results !
+        Press 'Randomize' to see the results !
     </div>
-  </div>
-  <footer>
+</div>
+<footer>
     <a target="_blank" href="https://manvan.fr">Développé par <em>Manvan</em></a>
-  </footer>
+</footer>
 </body>
 
 </html>
